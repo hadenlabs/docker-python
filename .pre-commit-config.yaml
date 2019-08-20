@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit.git
-    rev: v1.18.1
+    rev: v1.18.2
     hooks:
     -   id: validate_manifest
 -   repo: https://github.com/detailyang/pre-commit-shell.git
@@ -110,7 +110,7 @@ repos:
         additional_dependencies:
         - black
 - repo: https://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.17.0
+  rev: v1.19.0
   hooks:
     - id: terraform_fmt
     - id: terraform_docs
