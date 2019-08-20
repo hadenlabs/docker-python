@@ -4,7 +4,6 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pre-commit = "*"
 bumplus = "==0.0.8"
 bumpversion = "==0.5.3"
 docker-compose = "*"
@@ -22,6 +21,7 @@ restview = ">=2.8.1"
 rst = ">=0.1"
 mock = ">=2.0.0"
 tox = ">=2.8.2"
+pre-commit = "*"
 
 [packages]
 apispec = "==0.39.0"
