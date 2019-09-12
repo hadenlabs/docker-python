@@ -52,7 +52,7 @@ Usage
 
 .. code-block:: bash
 
-  λ make build version={{version}}
+  λ make hub.build version={{version}}
 
 
 Support
