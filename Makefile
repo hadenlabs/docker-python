@@ -41,6 +41,7 @@ IMAGE := equipindustry/python
 VERSION ?= latest
 
 docker-build:= docker build --quiet -t
+docker-push:= docker push
 docker-compose:=$(PIPENV_RUN) docker-compose
 
 include provision/make/*.mk
@@ -49,24 +50,15 @@ help:
 	@echo '${MESSAGE} Makefile for ${PROJECT}'
 	@echo ''
 	@echo 'Usage:'
-	@echo '    build                     Image docker with {version}'
 	@echo '    environment               create environment with pyenv'
 	@echo '    clean                     remove files of build'
 	@echo '    setup                     install requirements'
 	@echo ''
 	@make alias.help
+	@make hub.help
 	@make docker.help
 	@make docs.help
 	@make test.help
-
-build:
-	@echo " =====> Building $(IMAGE):${version}..."
-	@dir="images/$(subst -,/,${version})"; \
-	if [ -z "${version}" ]; then \
-		$(docker-build) $(IMAGE):latest .;\
-	else \
-		$(docker-build) $(IMAGE):${version} $${dir} ;\
-	fi
 
 clean:
 	@echo "=====> clean files unnecessary for ${TEAM}..."
