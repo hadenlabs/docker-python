@@ -69,7 +69,7 @@ build:
 	fi
 
 clean:
-	@echo "$(TAG)"Cleaning up"$(END)"
+	@echo "=====> clean files unnecessary for ${TEAM}..."
 ifneq (Darwin,$(OS))
 	@sudo rm -rf .tox *.egg *.egg-info dist build .coverage .eggs .mypy_cache
 	@sudo rm -rf docs/build
@@ -79,16 +79,14 @@ else
 	@rm -rf docs/build
 	@find . -name '__pycache__' -delete -print -o -name '*.pyc' -delete -print -o -name '*.pyo' -delete -print -o -name '*~' -delete -print -o -name '*.tmp' -delete -print
 endif
-	@echo
+	@echo "=====> end clean files unnecessary for ${TEAM}..."
 
 setup: clean
 	@echo "=====> install packages..."
 	$(PIPENV_INSTALL) --dev
 	$(PIPENV_RUN) pre-commit install
-	cp -rf provision/git/hooks/prepare-commit-msg .git/hooks/
-	@if [ ! -e ".env" ] && [ -e ".env-sample"]; then \
-		cp -rf .env-sample .env;\
-	fi
+	@cp -rf provision/git/hooks/prepare-commit-msg .git/hooks/
+	@[[ ! -e ".env" ]] && [[ -e ".env-sample" ]] || cp -rf .env-sample .env
 	@echo ${MESSAGE_HAPPY}
 
 environment: clean
