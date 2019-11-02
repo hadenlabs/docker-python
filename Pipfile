@@ -41,7 +41,7 @@ Flask = "==1.0.2"
 Flask-Cors = ">=3.0.4"
 Flask-RESTful = "==0.3.6"
 Flask-Script = "==2.0.6"
-PyYAML = "==3.13"
+PyYAML = "==5.1"
 Werkzeug = ">=0.14"
 
 [requires]
