@@ -10,7 +10,7 @@ hub.help:
 	@echo '        hub.push          push image to docker hub, example make hub.push image={{3.7.3.slim}}'
 	@echo ''
 
-hub.build: clean
+hub.build:
 	@echo " =====> Building $(IMAGE):${version}..."
 	@if [ -z ${version} ]; then \
 		$(docker-build) $(IMAGE):latest ;\
@@ -18,7 +18,7 @@ hub.build: clean
 		$(docker-build) $(IMAGE):${version} images/${version} ;\
 	fi
 
-hub.push: clean
+hub.push:
 	@echo " =====> Push $(IMAGE):${version}..."
 	@if [ -z ${version} ]; then \
 		$(docker-push) $(IMAGE):latest ;\
