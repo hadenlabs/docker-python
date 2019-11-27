@@ -10,6 +10,8 @@ ENV USERNAME developer
 
 ENV PACKAGES bash \
   git \
+  curl \
+  wget \
   gcc \
   libc-dev \
   make \
