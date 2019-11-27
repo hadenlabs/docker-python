@@ -11,7 +11,7 @@ test.help:
 	@echo '        test.syntax             Run all syntax in code'
 	@echo ''
 
-test: clean
+test:
 	@echo $(MESSAGE) Running tests on the current Python interpreter with coverage $(END)
 	@if [[ -z "${run}" ]]; then \
 		$(docker-compose) -f ${PATH_DOCKER_COMPOSE}/test.yml run --rm \
@@ -22,9 +22,8 @@ test: clean
 			app bash -c "$(PIPENV_RUN) pytest tests/${run}" ; \
 	fi
 
-test.lint: clean
-	$(docker-compose) -f ${PATH_DOCKER_COMPOSE}/dev.yml run --rm \
-		app bash -c "$(PIPENV_RUN) pre-commit run --all-files --verbose"
+test.lint:
+	$(PIPENV_RUN) pre-commit run --all-files --verbose
 
-test.syntax: clean
+test.syntax:
 	@echo $(MESSAGE) Running tests $(END)
