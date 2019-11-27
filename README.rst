@@ -30,9 +30,8 @@ Dependencies
 
 List of applications:
 
-- `Python 3.7.3`_
+- `Pyenv`_
 - `Docker`_
-- `Docker Compose`_
 
 Quick Start
 ===========
@@ -156,6 +155,5 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `equipindustry`_.
 
 .. Dependences:
 
-.. _Python 3.7.3: https://www.python.org/downloads/release/python-373
+.. _Pyenv: https://github.com/pyenv/pyenv
 .. _Docker: https://www.docker.com/
-.. _Docker Compose: https://docs.docker.com/compose/
