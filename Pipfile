@@ -28,5 +28,9 @@ PyYAML = "==5.1"
 
 [packages]
 
+
+[scripts]
+test = "pytest"
+
 [requires]
 python_version = "3.8.0"
