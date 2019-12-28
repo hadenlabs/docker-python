@@ -25,4 +25,3 @@ hub.push:
 	else \
 		$(docker-push) $(IMAGE):${version} ;\
 	fi
-
