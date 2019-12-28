@@ -6,8 +6,8 @@ hub: hub.help
 hub.help:
 	@echo '    Hub:'
 	@echo ''
-	@echo '        hub.build         build {image}, one example: make hub.build image={{3.7.3-slim}}'
-	@echo '        hub.push          push image to docker hub, example make hub.push image={{3.7.3.slim}}'
+	@echo '        hub.build         build {image}, one example: make hub.build version={{3.8.0-slim}}'
+	@echo '        hub.push          push image to docker hub, example make hub.push version={{3.8.0.slim}}'
 	@echo ''
 
 hub.build:
