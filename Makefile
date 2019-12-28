@@ -45,6 +45,12 @@ PATH_DOCKER_COMPOSE:=docker-compose.yml -f provision/docker-compose
 DOCKER_SERVICE_DEV:=app
 DOCKER_SERVICE_TEST:=app
 
+# docker settings
+
+PARENT_IMAGE := python
+IMAGE := equipindustry/python
+VERSION ?= latest
+
 docker-build:= docker build --quiet -t
 docker-push:= docker push
 docker-compose:=$(PIPENV_RUN) docker-compose
