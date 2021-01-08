@@ -140,5 +140,5 @@ Try to keep history as linear as possible using a `rebase` merge strategy.
 
 #. Delete merged Branch
 
-.. _Issue: https://github.com/equipindustry/docker-python/issues
-.. _Pull Request: https://github.com/equipindustry/docker-python/pulls
+.. _Issue: https://github.com/hadenlabs/docker-python/issues
+.. _Pull Request: https://github.com/hadenlabs/docker-python/pulls

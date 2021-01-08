@@ -17,7 +17,7 @@ else
 	PIPENV_INSTALL:=
 endif
 
-TEAM := equipindustry
+TEAM := hadenlabs
 PROJECT := docker-python
 PROJECT_PORT := 8000
 
@@ -48,7 +48,7 @@ DOCKER_SERVICE_TEST:=app
 # docker settings
 
 PARENT_IMAGE := python
-IMAGE := equipindustry/python
+IMAGE := hadenlabs/python
 VERSION ?= latest
 
 docker-build:= docker build --quiet -t
@@ -84,7 +84,7 @@ setup:
 	$(PIPENV_RUN) pre-commit install
 	$(PIPENV_RUN) pre-commit install -t pre-push
 	@cp -rf provision/git/hooks/prepare-commit-msg .git/hooks/
-	@[[ -e ".env" ]] || cp -rf .env.example .env
+	@[ -e ".env" ] || cp -rf .env.example .env
 	@echo ${MESSAGE_HAPPY}
 
 environment:

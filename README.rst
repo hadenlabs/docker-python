@@ -7,9 +7,9 @@ Build
 |Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.0.0
-:Web: https://github.com/equipindustry/docker-python
-:Download: https://github.com/equipindustry/docker-python
-:Source: https://github.com/equipindustry/docker-python
+:Web: https://github.com/hadenlabs/docker-python
+:Download: https://github.com/hadenlabs/docker-python
+:Source: https://github.com/hadenlabs/docker-python
 :Keywords: docker-python
 
 Docker Image:
@@ -108,28 +108,28 @@ Feel free to contact me to discuss any issues, questions, or comments.
 
 |linkedin| |beacon| |made|
 
-Made with :coffee: and :pizza: by `luis mayta`_ and `equipindustry`_.
+Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Links
 .. _`changelog`: CHANGELOG.rst
 .. _`contributors`: docs/source/AUTHORS.rst
 .. _`contributing`: docs/source/CONTRIBUTING.rst
 
-.. _`equipindustry`: https://github.com/equipindustry
+.. _`hadenlabs`: https://github.com/hadenlabs
 .. _`luis mayta`: https://github.com/luismayta
 
 .. _`Github`: https://github.com/luismayta
-.. _`Linkedin`: https://www.linkedin.com/in/luismayta
+.. _`Linkedin`: https://pe.linkedin.com/in/luismayta
 .. _`Email`: slovacus@gmail.com
     :target: mailto:slovacus@gmail.com
 .. _`Twitter`: https://twitter.com/slovacus
 .. _`Website`: http://luismayta.github.io
 .. _`PGP`: https://keybase.io/luismayta/pgp_keys.asc
 
-.. |Build Status| image:: https://travis-ci.org/equipindustry/docker-python.svg
-   :target: https://travis-ci.org/equipindustry/docker-python
-.. |GitHub issues| image:: https://img.shields.io/github/issues/equipindustry/docker-python.svg
-   :target: https://github.com/equipindustry/docker-python/issues
+.. |Build Status| image:: https://travis-ci.org/hadenlabs/docker-python.svg
+   :target: https://travis-ci.org/hadenlabs/docker-python
+.. |GitHub issues| image:: https://img.shields.io/github/issues/hadenlabs/docker-python.svg
+   :target: https://github.com/hadenlabs/docker-python/issues
 .. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
    :target: LICENSE
 
@@ -138,18 +138,18 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `equipindustry`_.
    :target: https://github.com/luismayta
 
 .. Badges for images hub docker
-.. |MicroBadger| image:: https://images.microbadger.com/badges/image/equipindustry/python.svg
-   :target: http://microbadger.com/images/equipindustry/python
-.. |Docker Stars| image:: https://img.shields.io/docker/stars/equipindustry/python.svg?style=flat-square
-   :target: https://hub.docker.com/r/equipindustry/python
-.. |Docker Pulls| image:: https://img.shields.io/docker/pulls/equipindustry/python.svg?style=flat-square
-   :target: https://hub.docker.com/r/equipindustry/python
+.. |MicroBadger| image:: https://images.microbadger.com/badges/image/hadenlabs/python.svg
+   :target: http://microbadger.com/images/hadenlabs/python
+.. |Docker Stars| image:: https://img.shields.io/docker/stars/hadenlabs/python.svg?style=flat-square
+   :target: https://hub.docker.com/r/hadenlabs/python
+.. |Docker Pulls| image:: https://img.shields.io/docker/pulls/hadenlabs/python.svg?style=flat-square
+   :target: https://hub.docker.com/r/hadenlabs/python
 
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
-   :target: http://pe.linkedin.com/in/luismayta
-.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/equipindustry/docker-python/readme
-   :target: https://github.com/equipindustry/docker-python
+   :target: https://pe.linkedin.com/in/luismayta
+.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/hadenlabs/docker-python/readme
+   :target: https://github.com/hadenlabs/docker-python
 .. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
    :target: http://www.zsh.org
 
