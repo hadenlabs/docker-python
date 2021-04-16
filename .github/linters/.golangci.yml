@@ -15,7 +15,7 @@ run:
 
 linters-settings:
   goimports:
-    local-prefixes: github.com/hadenlabs/infrastructure
+    local-prefixes: github.com/hadenlabs/docker-python
   golint:
     min-confidence: 0
   linters-settings.misspell:
