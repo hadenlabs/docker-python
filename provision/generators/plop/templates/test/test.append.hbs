@@ -1,0 +1,22 @@
+package test
+
+import (
+	"testing"
+
+	"github.com/gruntwork-io/terratest/modules/docker"
+	"github.com/stretchr/testify/assert"
+)
+
+func Test{{pascalCase testName}}{{pascalCase testImage}}Success(t *testing.T) {
+
+	tag := "hadenlabs/docker-python:{{testImage}}"
+	buildOptions := &docker.BuildOptions{
+		Tags: []string{tag},
+	}
+
+	docker.Build(t, "../images/{{testImage}}", buildOptions)
+
+	opts := &docker.RunOptions{Command: []string{"python", "--version"}}
+	output := docker.Run(t, tag, opts)
+	assert.Equal(t, "Python 3.8.0", output)
+}
