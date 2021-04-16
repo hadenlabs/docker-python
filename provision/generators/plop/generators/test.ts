@@ -34,9 +34,12 @@ export const testGenerator: PlopGeneratorConfig = {
     const actions: Actions = []
 
     actions.push({
-      type: "add",
+      type: 'add',
       templateFile: `${baseTemplatesPath}/test/test.append.hbs`,
-      path: `${testPath}/docker_python_${slugify(answers.testName, '_')}_${slugify(answers.testImage, '_')}_test.go`,
+      path: `${testPath}/docker_python_${slugify(answers.testName, '_')}_${slugify(
+        answers.testImage,
+        '_'
+      )}_test.go`,
       abortOnFail: true,
     })
 
