@@ -1,0 +1,58 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: docker-python
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'LGPL-3.0'
+
+# Canonical GitHub repo
+github_repo: hadenlabs/docker-python
+
+# Badges to display
+badges:
+  - name: GitHub tag (latest SemVer)
+    image: https://img.shields.io/github/v/tag/hadenlabs/docker-python.svg?label=latest&sort=semver
+    url: https://github.com/hadenlabs/docker-python/releases
+  - name: Lint
+    image: https://github.com/hadenlabs/docker-python/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/docker-python/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/docker-python.svg
+    url: https://github.com/hadenlabs/docker-python/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/docker-python.svg
+    url: https://github.com/hadenlabs/docker-python/releases
+  - name: Beacon
+    image: https://ga-beacon.appspot.com/G-MZEK48EGE8/docker-python/readme
+    url: https://github.com/hadenlabs/docker-python
+
+# Short description of this project
+description: |-
+  docker-python for hadenlabs.
+
+requirements: |-
+
+  This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
+
+  - [Pyenv](https://github.com/pyenv/pyenv)
+  - [Docker](https://www.docker.com/)
+
+# How to use this project
+usage: |-
+  ```bash
+    make hub.build version={{version}}
+  ```
+
+examples:
+  - 'docs/examples/common.md'
