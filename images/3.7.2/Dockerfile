@@ -1,7 +1,5 @@
 FROM python:3.7.2
 
-MAINTAINER Luis Mayta <@slovacus>
-
 ENV LIBRARY_DEPS  \
   libbz2-dev \
   libsasl2-dev \
@@ -25,7 +23,7 @@ ENV RUNTIME_DEPS curl \
   python-pycurl
 
 RUN apt-get update -y \
-  && apt install -y $LIBRARY_DEPS $RUNTIME_DEPS \
+  && apt-get install -y --no-install-recommends $LIBRARY_DEPS $RUNTIME_DEPS \
   && apt-get clean \
   && apt-get purge -y \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
