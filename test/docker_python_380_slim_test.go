@@ -8,7 +8,7 @@ import (
 )
 
 func TestDockerPython380SlimSuccess(t *testing.T) {
-	tag := "hadenlabs/docker-python"
+  tag := "hadenlabs/docker-python:3.8.0-slim"
 	buildOptions := &docker.BuildOptions{
 		Tags: []string{tag},
 	}
