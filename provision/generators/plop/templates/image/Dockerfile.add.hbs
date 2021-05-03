@@ -1,5 +1,5 @@
 #
-# Dockerfile for {{imageName}}
+# Dockerfile for Python {{imageVersion}}
 #
 
 FROM alpine:3.13.2
@@ -15,5 +15,5 @@ RUN set -xe \
 
 WORKDIR /data
 
-ENTRYPOINT ["{{snakeCase imageName}}"]
+ENTRYPOINT ["python"]
 CMD ["--help"]

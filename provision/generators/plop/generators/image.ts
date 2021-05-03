@@ -1,7 +1,8 @@
 import { Actions, PlopGeneratorConfig } from 'node-plop'
 import * as path from 'path'
 import { ImagePrompNames, Answers } from './entities'
-import { baseRootPath, baseTemplatesPath, pathExists, pathMake, sanitize } from '../utils'
+import { baseRootPath, baseTemplatesPath, pathExists, pathMake } from '../utils'
+import { sanitize } from '../helpers'
 const testPath = path.join(baseRootPath, 'test')
 
 export const imageGenerator: PlopGeneratorConfig = {
@@ -9,9 +10,9 @@ export const imageGenerator: PlopGeneratorConfig = {
   prompts: [
     {
       type: 'input',
-      name: ImagePrompNames.name,
-      message: 'What should it be image?',
-      default: 'youtubedl'
+      name: ImagePrompNames.version,
+      message: 'What should it be version image?',
+      default: '3.9.0'
     },
     {
       type: 'confirm',
@@ -22,10 +23,10 @@ export const imageGenerator: PlopGeneratorConfig = {
   ],
   actions: (data) => {
     const answers = data as Answers
-    const imagePath = `${baseRootPath}/images/${sanitize(answers.imageName)}`
+    const imagePath = `${baseRootPath}/images/${answers.imageVersion}`
 
     if (pathExists(imagePath)) {
-      throw new Error(`Stage '${answers.imageName}' exists in '${imagePath}'`)
+      throw new Error(`Stage '${answers.imageVersion}' exists in '${imagePath}'`)
     }
 
     pathMake(imagePath)
@@ -42,7 +43,7 @@ export const imageGenerator: PlopGeneratorConfig = {
       actions.push({
         type: 'add',
         templateFile: `${baseTemplatesPath}/image/test.add.hbs`,
-        path: `${testPath}/docker_${sanitize(answers.imageName)}_test.go`
+        path: `${testPath}/docker_python_${sanitize(answers.imageVersion)}_test.go`
       })
     }
 
