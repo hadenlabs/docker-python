@@ -30,6 +30,9 @@ PYENV_NAME="${PROJECT}"
 GIT_IGNORES:=python,node,go
 GI:=gi
 
+# issues reviewers
+REVIEWERS?=luismayta
+
 # Configuration.
 SHELL ?=/bin/bash
 ROOT_DIR=$(shell pwd)
@@ -98,10 +101,9 @@ setup:
 	make python.setup
 	make python.precommit
 	@[ -e ".env" ] || cp -rf .env.example .env
-	make yarn.setup
-	make git.setup
-	make go.setup
-	@echo ${MESSAGE_HAPPY}
+	@make yarn.setup
+	@make git.setup
+	@make go.setup
 
 ## setup environment of project
 .PHONY: environment
