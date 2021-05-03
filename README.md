@@ -14,7 +14,7 @@
 
 # docker-python
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/docker-python.svg?label=latest&sort=semver)](https://github.com/hadenlabs/docker-python/releases) [![Lint](https://github.com/hadenlabs/docker-python/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/docker-python/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/docker-python.svg)](https://github.com/hadenlabs/docker-python/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/docker-python.svg)](https://github.com/hadenlabs/docker-python/releases) [![Beacon](https://ga-beacon.appspot.com/G-MZEK48EGE8/docker-python/readme)](https://github.com/hadenlabs/docker-python)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/docker-python?label=latest&sort=semver)](https://github.com/hadenlabs/docker-python/releases) [![Latest Release](https://img.shields.io/github/release/hadenlabs/docker-python)](https://github.com/hadenlabs/docker-python/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/docker-python/lint-code)](https://github.com/hadenlabs/docker-python/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/docker-python)](https://github.com/hadenlabs/docker-python/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com) [![Beacon](https://ga-beacon.appspot.com/G-MZEK48EGE8/docker-python/readme)](https://github.com/hadenlabs/docker-python)
 
 docker-python for hadenlabs.
 
