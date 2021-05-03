@@ -7,18 +7,18 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
-func Test{{pascalCase imageName}}LatestSuccess(t *testing.T) {
+func TestPython{{sanitize imageVersion}}Success(t *testing.T) {
 
-  tag := "hadenlabs/{{snakeCase imageName}}:latest"
+  tag := "hadenlabs/python:{{imageVersion}}"
   otherOptions := []string{
-		"--no-cache",
+            "--no-cache",
 	}
   buildOptions := &docker.BuildOptions{
-		Tags:         []string{tag},
-		OtherOptions: otherOptions,
+            Tags:         []string{tag},
+            OtherOptions: otherOptions,
 	}
 
-  docker.Build(t, "../images/{{snakeCase imageName}}", buildOptions)
+  docker.Build(t, "../images/{{imageVersion}}", buildOptions)
 
   opts := &docker.RunOptions{
 		Command: []string{},

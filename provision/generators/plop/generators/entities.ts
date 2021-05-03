@@ -1,5 +1,5 @@
 export enum ImagePrompNames {
-  'name' = 'imageName',
+  'version' = 'imageVersion',
   'wantTest' = 'wantTest'
 }
 
