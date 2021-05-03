@@ -1,0 +1,19 @@
+#
+# Dockerfile for {{imageName}}
+#
+
+FROM alpine:3.13.2
+
+RUN set -xe \
+    && apk add --no-cache ca-certificates \
+        ffmpeg \
+        openssl \
+        python3 \
+        py3-pip \
+        aria2
+
+
+WORKDIR /data
+
+ENTRYPOINT ["{{snakeCase imageName}}"]
+CMD ["--help"]

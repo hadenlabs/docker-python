@@ -1,2 +1,3 @@
-import { testGenerator } from './test'
-export { testGenerator }
+import { imageGenerator } from './image'
+import { ImagePrompNames } from './entities'
+export { imageGenerator, ImagePrompNames }
